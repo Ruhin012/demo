@@ -1,0 +1,623 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    Themes Bootstrap - Real Estate Template v1.0.0 (https://themesbootstrap.com.mx/templates/real-estate-template.html)
+    Copyright 2019 Themes Bootstrap
+    Licensed under MIT (https://github.com/diegovr7/real-estate/blob/master/LICENSE)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: .9;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.header-logo {
+    font-size: 1.5rem;      
+    font-weight: bold;       
+    color: #000000;          
+    text-decoration: none;   
+    /* font-family: 'Arial', sans-serif;  */
+    
+}
+
+.header-logo:hover {
+    color: #275CB8; 
+    
+}
+
+
+.block-title {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.topmargin-sm {
+    margin-top: 30px !important; 
+}
+
+.topmargin-lg {
+    margin-top: 60px !important;
+}
+
+.primary-btn {
+    background: #ffffff;
+    color: #222729;
+    border: 2px solid #ffffff;
+    padding: 15px 40px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.primary-btn:hover {
+    color: #222729;
+    opacity: .9;
+}
+
+.secondary-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 15px 40px;
+    display: inline-block;
+    margin: 20px 5px 0 5px;
+}
+
+.secondary-btn:hover {
+    background-color: #ffffff;
+    color: #2d3234;
+}
+
+/*/////////////////////////////////////////
+Navbar
+////////////////////////////////////////*/
+
+.navbar {
+    background-color: #ffffff;
+    z-index: 9999;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #222729;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #222729;
+    opacity: .9;
+}
+
+.nav-item i {
+    font-size: 20px;
+    margin-left: 20px;
+    color: #222729;
+}
+
+
+.navbar-toggler {
+    font-size: 30px;
+    color: #000000;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.header-logo {
+    max-width: 180px;
+    min-width: 180px;
+}
+
+
+@media (max-width: 970px) {
+    .nav-item i {
+        font-size: 20px;
+        color: #222729;
+        margin-left: 0px;
+    }
+
+    
+}
+/*/////////////////////////////////////////
+Hero
+////////////////////////////////////////*/
+
+#hero {
+    padding: 20px 0;
+}
+
+.hero-container-desktop {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container-desktop img {
+    max-width: 100%;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.hero-container-desktop:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.hero-details {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    max-width: 500px;
+    z-index: 9000;
+}
+
+.hero-details h1 {
+    font-size: 50px;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.hero-details p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+    letter-spacing: .1em;
+    margin-top: 10px;
+}
+
+.hero-details-mobile {
+    color: #222729;
+}
+
+.hero-details-mobile h1 {
+    font-size: 46px;
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+.hero-details-mobile p {
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.8;
+}
+
+/*/////////////////////////////////////////
+Properties
+////////////////////////////////////////*/
+
+/* Container & Section */
+.properties-section {
+  padding: 60px 20px;
+  background: #fff;
+  /* font-family: Arial, sans-serif; */
+  color: #222729;
+}
+
+.properties-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.properties-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.properties-subtext {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .properties-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .properties-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Property Card */
+.property-card {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-gallery {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  height: auto;
+  cursor: pointer;
+}
+
+.property-gallery img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.property-gallery img.active {
+  display: block;
+}
+
+/* Property Info */
+.property-id {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(255,255,255,0.9);
+  color: #000;
+  font-weight: 600;
+  padding: 5px 10px;
+  font-size: 13px;
+  z-index: 5;
+}
+
+.property-title {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #fff;
+  z-index: 5;
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.property-title span {
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.property-title h3 {
+  font-size: 18px;
+  margin: 5px 0 0;
+  line-height: 1.4;
+  text-shadow: 2px solid #000;
+  font-weight: 600;
+  
+}
+
+/* Extra Info */
+.property-info {
+  padding: 10px 15px;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* Button */
+.property-button {
+  position: relative;
+  margin: 10px 15px;
+  z-index: 5;
+}
+
+.bid-btn {
+  background: #222729;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.bid-btn:hover {
+  background: #444;
+}
+
+/* Hover zoom */
+.property-card:hover img.active {
+  transform: scale(1.05);
+}
+
+/* Lightbox Overlay */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center; /* ensures center vertically on mobile */
+  z-index: 9999;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  cursor: zoom-out;
+}
+
+
+/*/////////////////////////////////////////
+
+Properties
+////////////////////////////////////////*/
+
+
+/*/////////////////////////////////////////
+Call to Action
+////////////////////////////////////////*/
+
+
+
+#call-to-action {
+  background-color: #2d3234;
+  border-bottom: 1px solid hsla(0,0%,100%,.05);
+  text-align: center;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+#call-to-action h3 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+#call-to-action p {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* Form Styles */
+.cta-form {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 0; /* No border radius as requested */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #fff;
+  background-color: #3a3f42;
+  color: #fff;
+}
+
+.bid-submit-btn {
+  display: inline-block;
+  background: #222729;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bid-submit-btn:hover {
+  background: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #call-to-action h3 {
+    font-size: 36px;
+  }
+  #call-to-action p {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+/*/////////////////////////////////////////
+Call to Action
+////////////////////////////////////////*/
+
+/*/////////////////////////////////////////
+Footer
+////////////////////////////////////////*/
+
+#footer {
+    background-color: #2d3234;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+#footer ul {
+    margin-bottom: 0px;
+}
+
+#footer li {
+    margin: 0 15px;
+}
+
+/*/////////////////////////////////////////
+Copyright
+////////////////////////////////////////*/
+
+#copyright {
+    background-color: #222729;
+    color: #919394;
+    padding: 15px 0;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+#copyright small {
+    font-weight: 200;
+}
+
+#copyright a {
+    color: #ffffff;
+}
+
+/*/////////////////////////////////////////
+Media Queries
+////////////////////////////////////////*/
+
+@media (max-width: 575.98px) { 
+    /*//////////// hero ////////////*/
+    .hero-container-desktop {
+        display: none;
+    }
+    /*//////////// properties ////////////*/
+    .property-title h3 {
+        font-size: 20px;
+    }
+    .property-title span {
+        font-size: 12px;
+    }
+    .property-button a {
+        font-size: 12px;
+    }
+    /*//////////// Footer ////////////*/
+    .list-inline-item {
+        display: block;
+        margin: 25px 0 !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    /*//////////// hero ////////////*/
+    .hero-container-desktop {
+        display: none;
+    }
+    /*//////////// properties ////////////*/
+    .property-title-sm h3 {
+        font-size: 36px;
+    }
+    .property-button-sm a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    /*//////////// hero ////////////*/
+    .hero-container-mobile, .mobile-hero {
+        display: none;
+    }
+    .hero-details {
+        max-width: 350px;
+        top: 70px;
+    }
+    .hero-details h1 {
+        font-size: 26px;
+    }
+    .hero-details p {
+        font-size: 14px;
+    }
+    /*//////////// properties ////////////*/
+    .property-title h3 {
+        font-size: 20px;
+    }
+    .property-title span {
+        font-size: 12px;
+    }
+    .property-button a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    /*//////////// hero ////////////*/
+    .hero-container-mobile, .mobile-hero {
+        display: none;
+    }
+    .hero-details {
+        max-width: 400px;
+        top: 100px;
+    }
+    .hero-details h1 {
+        font-size: 36px;
+    }
+    .hero-details p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .hero-container-mobile, .mobile-hero {
+        display: none;
+    }
+}
